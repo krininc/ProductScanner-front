@@ -1,0 +1,113 @@
+/* Saved Products Page */
+.saved-products-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding-top: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid #d3bdf0;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Saved Products List */
+.saved-products-list {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    margin-top: 15px;
+}
+
+/* Individual Saved Product Card */
+.saved-product-card {
+    display: flex;
+    align-items: center;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.saved-product-card:hover {
+    background-color: #dcdcdc;
+}
+
+/* Product Image */
+.saved-product-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* Product Info */
+.saved-product-info {
+    flex: 1;
+}
+
+.saved-product-info strong {
+    font-size: 16px;
+    display: block;
+}
+
+.saved-product-info p {
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+/* Bottom Navigation */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar button {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: lightgray;
+}

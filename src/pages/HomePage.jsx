@@ -1,11 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "../index.css"; // Import global CSS
 
 const HomePage = () => {
+    const navigate = useNavigate(); // Initialize navigation
+
     const openCamera = () => {
         navigator.mediaDevices.getUserMedia({ video: true })
             .then((stream) => {
-                // Open the camera in a new video element or handle it as needed
                 alert("Camera access granted");
             })
             .catch((error) => {
@@ -30,14 +32,15 @@ const HomePage = () => {
 
                 {/* Ensure button is above the blur */}
                 <div className="button-container">
-                    <button className="button">Manual Entry</button>
+                    <button className="button" onClick={() => navigate("/manual-entry")}>Manual Entry</button>
                 </div>
             </div>
 
             {/* Bottom Navigation */}
             <div className="navbar">
-                <button>Search</button>
-                <button>MyProducts</button>
+                <button onClick={() => navigate("/search")}>Search</button>
+                <button onClick={() => navigate("/")}>Home</button>
+                <button onClick={() => navigate("/saved-products")}>MyProducts</button>
             </div>
         </div>
     );
